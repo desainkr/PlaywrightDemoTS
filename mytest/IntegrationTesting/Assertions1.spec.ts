@@ -39,9 +39,9 @@ test('test', async ({ page }) => {
 
      //await page.locator("#hobbies").check();
 
-    await page.getByLabel('Name:').fill("Neelkanata");
+    await page.getByLabel('Name:').fill("Neelkanata R Desai");
     await expect.soft(page.getByLabel('Name:')).toHaveValue("Neelkanata1");
-    await page.getByLabel('Email:').fill("test@gmail.com");
+    await page.getByLabel('Email:').fill("test123@gmail.com");
     await expect.soft(page.getByLabel('Email:')).toHaveValue("test@gmail.com");
 
 
