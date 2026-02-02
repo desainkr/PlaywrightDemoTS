@@ -1,0 +1,30 @@
+{
+  "name": "playwrightdemots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:prod": "cross-env ENV=prod npx playwright test mytest/DPdatadriventest1.spec.ts --headed",
+    "test:qa": "cross-env ENV=qa   npx playwright test mytest/DPdatadriventest1.spec.ts --headed",
+    "test:stg": "cross-env ENV=stg  npx playwright test mytest/DPdatadriventest1.spec.ts --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.1",
+    "ajv": "^8.17.1",
+    "allure-playwright": "^3.4.5",
+    "cross-env": "^10.1.0",
+    "playwright": "^1.57.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "dotenv": "^17.2.3",
+    "luxon": "^3.7.2",
+    "xlsx": "^0.18.5"
+  }
+}

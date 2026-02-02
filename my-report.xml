@@ -1,0 +1,16 @@
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="34.307784999999996">
+<testsuite name="multipleWindowsTabs.spec.ts" timestamp="2026-02-02T00:05:20.328Z" hostname="chromium" tests="2" failures="0" skipped="0" time="32.254" errors="0">
+<testcase name="mutiple tabs demo" classname="multipleWindowsTabs.spec.ts" time="25.717">
+<system-out>
+<![CDATA[new tab url  is : https://demoqa.com/sample
+]]>
+</system-out>
+</testcase>
+<testcase name="mutiple windows demo" classname="multipleWindowsTabs.spec.ts" time="6.537">
+<system-out>
+<![CDATA[New title fo rthe window is :  https://demoqa.com/sample
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
