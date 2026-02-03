@@ -12,7 +12,7 @@ test('Set example', async ({ page }) => {
     const suggBooks = page.locator("[id*='sac-suggestion-row']");
     await suggBooks.first().waitFor({ state: "visible" });
     const booksugcount = await suggBooks.count();
-    console.log("Total suggestion count is:", booksugcount);
+    console.log("Total suggestion count are:", booksugcount);
     expect(await page.locator("[id*='sac-suggestion-row']")).toHaveCount(22);
     //print all 
     const optionsText = await page.locator("[id*='sac-suggestion-row']").allTextContents();
