@@ -22,7 +22,7 @@ test('Frame Demo', async ({ page }) => {
 })
 
 
-test.only('Inner Demo', async ({ page }) => {
+test('Inner Demo', async ({ page }) => {
 
     await page.goto("https://ui.vision/demo/webtest/frames/");
     const frame3 = page.frame({ url: "https://ui.vision/demo/webtest/frames/frame_3.html" });

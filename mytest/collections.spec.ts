@@ -27,7 +27,7 @@ test('map example', async ({ page }) => {
 
 })
 
-test.only('Set example', async ({ page }) => {
+test('Set example', async ({ page }) => {
 
     await page.goto("https://www.flipkart.com/");
     await page.getByPlaceholder('Search for products, brands and more').fill("laptop");
