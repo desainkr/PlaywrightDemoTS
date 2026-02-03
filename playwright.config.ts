@@ -49,7 +49,7 @@ export default defineConfig({
    // baseURL: 'https://restful-booker.herokuapp.com',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: 'retain-on-failure',
     //video:'off'
    // screenshot:'only-on-failure'
   //storageState:"testdata/authentication.json",
