@@ -42,7 +42,7 @@ test ('Confirmation Dialog', async ({ page }) => {
 })
 
 
-test.only ('Promt Dialog', async ({ page }) => {
+test ('Promt Dialog', async ({ page }) => {
     await page.goto("https://testautomationpractice.blogspot.com/");
 
     //Register a dialog handler

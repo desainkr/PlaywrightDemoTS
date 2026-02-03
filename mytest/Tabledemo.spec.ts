@@ -73,7 +73,7 @@ test('Lets handle it Table2 Demo', async ({ page }) => {
 })
 
 
-test.only('Sortable Tables Demo', async ({ page }) => {
+test('Sortable Tables Demo', async ({ page }) => {
 
     await page.goto("https://letcode.in/table");
     const table = page.locator(".mat-sort");

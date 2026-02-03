@@ -50,7 +50,7 @@ test('Handling date picker', async ({ page }) => {
 
 })
 
-test.only('Handling Future date picker', async ({ page }) => {
+test('Handling Future date picker', async ({ page }) => {
 
 
 

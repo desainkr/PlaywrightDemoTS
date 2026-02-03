@@ -13,7 +13,7 @@ test('Drop down test1', async ({ page }) => {
 
 })
 
-test.only('Drop down Amazon test2', async ({ page }) => {
+test('Drop down Amazon test2', async ({ page }) => {
     await page.goto('https://www.amazon.com/');
     //Seelct option dropdown
     // await page.locator('#searchDropdownBox').selectOption({ value: 'search-alias=alexa-skills' }) //By using value

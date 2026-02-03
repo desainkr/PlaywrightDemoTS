@@ -28,7 +28,7 @@ test('get api BookingIDs by path param testes', async ({ request }) => {
 
 })
 
-test.only('get api Booking details by name -query params', async ({ request }) => {
+test('get api Booking details by name -query params', async ({ request }) => {
   const firstname="Jim";
   const lastname="Brown";  // we can this as query parameter 
     //sending get request along with path parameter 
