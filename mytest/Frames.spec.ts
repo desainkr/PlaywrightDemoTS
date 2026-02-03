@@ -51,7 +51,7 @@ if(frame2)
 
 })
 
-test.only('nested frames', async ({page})=>{
+test('nested frames', async ({page})=>{
 
  await page.goto("https://play1.automationcamp.ir/frames.html");
 
