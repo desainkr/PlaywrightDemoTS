@@ -43,16 +43,9 @@ test('Handling date picker', async ({ page }) => {
   const actualDate = new Date(datepickervalue);
   expect(actualDate.getTime()).toBe(expectedDate.getTime());
 
-
-
-
-
-
 })
 
 test('Handling Future date picker', async ({ page }) => {
-
-
 
   await page.goto("https://www.globalsqa.com/demo-site/datepicker")
   const iframes = page.frames();

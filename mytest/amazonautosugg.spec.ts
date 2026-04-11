@@ -9,10 +9,12 @@ test('Set example', async ({ page }) => {
     await expect(page.locator(".left-pane-results-container")).toBeVisible();
 
     //await page.waitForTimeout(4000)
-    const suggBooks = page.locator("[id*='sac-suggestion-row']");
+    const suggBooks = page.locator("[id*='sac-suggestion-row']");  //  another way xpath//div[contains(@id, 'sac-suggestion-row')]
+    //*= → "contains" operator (matches if the value has this text anywhere inside)
+    //It selects every HTML element whose id attribute contains the substring "sac-suggestion-row" anywhere inside it (the *= means "contains").
     await suggBooks.first().waitFor({ state: "visible" });
     const booksugcount = await suggBooks.count();
-    console.log("Total suggestion count is:", booksugcount);
+    console.log("Total suggestion count are:", booksugcount);
     expect(await page.locator("[id*='sac-suggestion-row']")).toHaveCount(22);
     //print all 
     const optionsText = await page.locator("[id*='sac-suggestion-row']").allTextContents();

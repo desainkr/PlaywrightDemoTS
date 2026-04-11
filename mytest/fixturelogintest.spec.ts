@@ -1,4 +1,4 @@
-import { test, expect,Page } from "./fixturelogintest.js";
+import { test, expect} from "./fixturelogintest.js";
 
 
 test('fixture login tets demo', async ({ loggedInPage }) => {

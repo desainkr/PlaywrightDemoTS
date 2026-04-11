@@ -13,7 +13,7 @@ import { test, expect } from "@playwright/test";
 
 test('Tables Demo', async ({ page }) => {
 
-    await page.goto("https://letcode.in/table");
+    await page.goto("https://letcode.in/table", ({timeout: 3000}));
     const table = page.locator("#shopping");
     await expect(table).toBeVisible();
     const rows = await page.locator("#shopping tbody tr").count();

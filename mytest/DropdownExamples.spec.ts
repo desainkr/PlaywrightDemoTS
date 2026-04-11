@@ -5,11 +5,9 @@ test('Drop down test1', async ({ page }) => {
     //Seelct option dropdown
     await page.locator(`#state`).selectOption({ value: 'Rajasthan' }); // By using value
     await page.waitForTimeout(4000)
-    await page.waitForTimeout(4000);
     await page.locator(`#state`).selectOption({ index: 2 });  // By using index
     await page.waitForTimeout(2000);
     await page.locator(`#state`).selectOption({ label: 'Haryana' }); //By using label
-
 
 })
 

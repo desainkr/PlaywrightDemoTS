@@ -10,6 +10,7 @@ import {parse} from 'csv-parse/sync';
 const csvpath='testdata/data.csv';
 const filecontent=fs.readFileSync(csvpath,'utf-8');
 const records:LoginData[] = parse(filecontent,{columns:true,skip_empty_lines:true});
+
 interface LoginData {
   email: string;
   password: string;
