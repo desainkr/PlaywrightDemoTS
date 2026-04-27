@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('test', async ({ page }) => {
     await page.goto('https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php');
-   /* //toHaveValue Assertion 
+   //toHaveValue Assertion 
     await page.getByLabel('Name:').fill("Neelkanata");
     await expect(page.getByLabel('Name:')).toHaveValue("Neelkanata");
     await page.getByLabel('Email:').fill("test@gmail.com");
@@ -21,26 +21,26 @@ test('test', async ({ page }) => {
 
     //Nagative Assertion
       
-    await expect(page.getByLabel('Name:')).not.toHaveValue("Neelkanata");
-    await expect(page.getByLabel('Email:')).not.toHaveValue("test@gmail.com");
+    await expect(page.getByLabel('Name:')).not.toHaveValue("Neelkanata111");
+    await expect(page.getByLabel('Email:')).not.toHaveValue("test@gmail111.com");
 
     await expect(page.locator("#gender")).toBeVisible();
-    //await page.locator("#gender").check();
+    await page.locator("#gender").check();
     await expect(page.locator("#gender")).not.toBeChecked();
 
 
     await expect(page.locator("#hobbies")).toBeVisible();
-    //await page.locator("#hobbies").check();
+    await page.locator("#hobbies").check();
     await expect(page.locator("#hobbies")).not.toBeChecked();
     await page.waitForTimeout(3000);
-*/
+
     //Soft Assertions - will termanite 
 
 
      //await page.locator("#hobbies").check();
 
     await page.getByLabel('Name:').fill("Neelkanata");
-    await expect.soft(page.getByLabel('Name:')).toHaveValue("Neelkanata1");
+    await expect.soft(page.getByLabel('Name:')).toHaveValue("Neelkanata");
     await page.getByLabel('Email:').fill("test@gmail.com");
     await expect.soft(page.getByLabel('Email:')).toHaveValue("test@gmail.com");
 

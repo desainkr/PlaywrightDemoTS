@@ -9,7 +9,7 @@ const noofframes= page.frames();
 const frame3= noofframes[4];
 await expect(frame3.locator("h1")).toHaveText("Right")
 
-/*
+
 console.log(`No of frames present are : ${noofframes.length}`);
 
 // Approach 1 Using name 
@@ -47,7 +47,7 @@ if(frame2)
   
  }
 
-*/
+
 
 })
 

@@ -1,5 +1,5 @@
-import { test, expect} from "./fixturelogintest.js";
-
+import { test } from "./fixturelogintest.js";
+import { expect} from "@playwright/test";
 
 test('fixture login tets demo', async ({ loggedInPage }) => {
     await loggedInPage.waitForLoadState("load");

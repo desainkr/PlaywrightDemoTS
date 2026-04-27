@@ -15,11 +15,11 @@ export default defineConfig({
   ],
 
   use: {
-    trace: 'on-first-retry',           // cheaper than retain-on-failure
+   // trace: 'on-first-retry',           // cheaper than retain-on-failure
     screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
+   // video: 'retain-on-failure',
     ignoreHTTPSErrors: false,          // ← safer default
-
+    //storageState:"testdata/authentication.json",
     // If you really want maximized window (local dev only)
     // viewport: null,
     // launchOptions: {

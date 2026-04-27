@@ -9,6 +9,8 @@ test.describe ('Data driven test with new data 13', () =>{
 
   for (const user of users){
     test(`login test for ${user.email}`, async ({ page }) => {
+     
+
   await page.goto('https://naveenautomationlabs.com/opencart/index.php?route=account/login');
   await page.locator('#input-email').fill(user.email);
   await page.locator('#input-password').fill(user.password);
@@ -16,5 +18,9 @@ test.describe ('Data driven test with new data 13', () =>{
   await expect(page.locator('h2').first()).toBeVisible();
   await expect(page.locator('h2').first()).toHaveText('My Account');
 
+
+
  }) }
+
+ 
 });

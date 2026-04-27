@@ -33,6 +33,13 @@ test("Bootsrtap hidden dropdown", async ({ page }) => {
         //console.log(await options.nth(i).innerText());
         console.log(await options.nth(i).textContent());
     }
+    // below code also working
+// const allOptions= await options.all();
+//  for(let op of allOptions){
+//     console.log(await op.allInnerTexts());
+    
+//  }
+
 
     //Select/click on option
     for (let i = 0; i < count; i++) {

@@ -5,7 +5,7 @@ test('darg and drop test', async () => {
     const page = await browser.newPage();
     //mouse hover
     await page.goto("https://jqueryui.com/resources/demos/droppable/default.html");
-  //Single
+     //Single
     await page.locator('#draggable').dragTo(page.locator('#droppable'));
     await page.waitForTimeout(2000);
 // multiple commands
@@ -13,5 +13,7 @@ test('darg and drop test', async () => {
     await page.mouse.down();
     await page.locator('#droppable').hover();
     await page.mouse.up();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(2000); 
+    // another approach 
+  //  await page.dragAndDrop('#draggable','#droppable');
 })

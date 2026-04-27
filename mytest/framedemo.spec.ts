@@ -31,7 +31,7 @@ test('Inner Demo', async ({ page }) => {
         const childframes = frame3.childFrames();
         console.log("Total number of child frames in Frame3", childframes.length);
 
-        const [childFrame] = childframes;
+        const [childFrame] = childframes;  //childFrame[0]
 
         if (childFrame) {
             const radio = childFrame.getByLabel("Hi, I am the UI.Vision IDE2");

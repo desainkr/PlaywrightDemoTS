@@ -30,7 +30,8 @@ test('Set example', async ({ page }) => {
     for (const option of options) 
     {
         const text = await option.textContent();
-        if (text && text.includes('book case')) 
+      //  if (text && text.includes('book case')) 
+      if (text ==='book case')
             {
             await option.click();
             break;
