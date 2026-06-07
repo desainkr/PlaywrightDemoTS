@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../PlaywrightCucumber"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../PlaywrightMCP"
+		}
+	],
+	"settings": {}
+}

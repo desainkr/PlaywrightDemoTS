@@ -8,6 +8,7 @@ test('auth test', async () => {
   const Context = await browser.newContext(
     { httpCredentials: { username: 'admin', password: 'admin' } }
   );
+
   const page = await Context.newPage();
   
   /*const username='admin';
@@ -29,6 +30,7 @@ test('auth test', async () => {
   await page.waitForLoadState();
   await expect(page.locator("div[class='example']>p")).toBeVisible();
   await page.waitForLoadState();
+  await page.waitForTimeout(2000);
 
 
 })

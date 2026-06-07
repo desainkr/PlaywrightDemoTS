@@ -38,7 +38,7 @@ test('Test checkbox box', async ({ page }) => {
 
 })
 
-test.only('Amazon checkbox box', async ({ page }) => {
+test('Amazon checkbox box', async ({ page }) => {
 
     await page.goto('https://www.amazon.com/');
     await page.getByRole('searchbox', { name: 'Search Amazon' }).fill("book");

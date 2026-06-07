@@ -7,5 +7,6 @@ test('Screen shot Demo', async ({ page }) => {
     const screenshot= await page.screenshot();
     //expect(screenshot).toMatchSnapshot('Swaglabs.png');
     page.getByRole('textbox', { name: 'Username' });
+ 
 
 });

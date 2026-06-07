@@ -53,5 +53,5 @@ test('mutiple windows demo', async ({ }) => {
     console.log("New title fo rthe window is : ", newWindow.url());
     await page.waitForTimeout(2000)
     await newWindow.close();
-
+    
 })

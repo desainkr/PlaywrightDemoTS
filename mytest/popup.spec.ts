@@ -6,7 +6,8 @@ test('handle popups', async ({ browser }) => {
     const page = await context.newPage();
     await page.goto("https://testautomationpractice.blogspot.com/");
     //multiple pops
-    const [popupwindow] = await Promise.all([page.waitForEvent('popup'),
+    const [popupwindow] = await Promise.all([
+    page.waitForEvent('popup'),
     page.locator('#PopUp').click()]);
     await page.waitForTimeout(2000);
     const allpopupswindow:page[] = context.pages(); //returns array of pages 

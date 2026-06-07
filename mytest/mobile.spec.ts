@@ -1,6 +1,7 @@
-import { test, devices } from '@playwright/test';
+import { test, devices, chromium } from '@playwright/test';
 
 test('Mobile UI test without geolocation', async ({ browser }) => {
+  const broser= await chromium.launch();
   const context = await browser.newContext({
     ...devices['iPhone 15 Pro Max']
   });

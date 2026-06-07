@@ -5,13 +5,14 @@ console.log(datas);
 
 for (const data of datas) {
     
-test(`env login test ${data.email}`, async ({ page }) => {
-    console.log("URL is :", data.baseURL);
-    console.log('username and password is:',data.email,':', data.password);
-    await page.goto(data.baseURL);
-    await page.getByPlaceholder("E-Mail Address").fill(data.email);
-    await page.getByPlaceholder("Password").fill(data.password);
+test(`env login test ${data.DD_EMAIL}`, async ({ page }) => {
+    console.log("URL is :", data.DD_BASE_URL);
+    console.log('username and password is:',data.DD_EMAIL,':', data.DD_PASSWORD);
+    await page.goto(data.DD_BASE_URL);
+    await page.getByPlaceholder("E-Mail Address").fill(data.DD_EMAIL);
+    await page.getByPlaceholder("Password").fill(data.DD_PASSWORD);
     await page.getByRole("button", { name: 'Login' }).click();
+  
     //await page.waitForTimeout(3000);
     //await expect(page.getByRole("heading", { name: 'Dashboard' })).toBeVisible({ timeout: 5000 });
     await expect(page.getByRole("heading", { name: 'My Account' }).first()).toBeVisible({timeout: 5000});

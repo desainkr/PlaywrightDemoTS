@@ -4,15 +4,21 @@ test('Autosuggest', async ({ page }) => {
 
     await page.goto("https://www.flipkart.com/");
     //await page.goto("https://www.google.com/");
-    await page.locator("input[name='q']").fill("smart"); //Search text
+    await page.locator("(//input[@name='q'])[1]").fill("smart"); // flipkart Search text
     //await page.locator("textarea[title='Search']").fill("smart"); //Search text
-    //await page.waitForTimeout(5000);
+    await page.waitForTimeout(5000);
     //Get all the suggested option--> ctrl+Shift+p  on DOM -->emulate focused page 
     //const suggestions = page.locator("ul>li");
-
+    const dialog = page.getByRole('dialog');
+    try {
+        await dialog.waitFor({ state: 'visible', timeout: 5000 });
+        await page.keyboard.press('Escape');
+    } catch {
+        // Popup did not appear → continue
+    }
     // await expect(page.getByRole('listitem').first()).toBeVisible();
-    const suggestions = page.getByRole('listitem')
-    //const suggestions = page.getByRole('option');
+    //const suggestions = page.getByRole('listitem')
+    const suggestions = page.getByRole('option');
     await suggestions.first().waitFor({ state: 'visible' });
     /*
        Use one of these instead of hard waits:
