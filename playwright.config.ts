@@ -15,6 +15,11 @@ export default defineConfig({
   ],
 
   use: {
+  // headless: false,
+  // viewport: null,
+  // launchOptions: {
+  //   args: ['--start-maximized']
+  // },
    // trace: 'on-first-retry',           // cheaper than retain-on-failure
     screenshot: 'only-on-failure',
    // video: 'retain-on-failure',
