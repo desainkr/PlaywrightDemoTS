@@ -68,3 +68,7 @@ test ('Promt Dialog', async ({ page }) => {
     await page.waitForTimeout(3000);
 
 })
+
+
+npx playwright test--shard = 1/3
+split the test across machines (CI sharding)
