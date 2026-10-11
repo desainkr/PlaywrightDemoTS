@@ -36,7 +36,7 @@ test('Radio Button Actions', async ({ page }) => {
 
 //Checkbox
 
-test.only('Check box Actions', async ({ page }) => {
+test('Check box Actions', async ({ page }) => {
     await page.goto("https://testautomationpractice.blogspot.com/");
     //1.Seelct specific checkbox(Sunday) using getByLabel and assert
     const suncheckbox = page.getByLabel("Sunday");

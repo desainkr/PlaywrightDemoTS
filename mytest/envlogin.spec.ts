@@ -3,6 +3,8 @@ import path from 'path';
 const baseURL = process.env.baseURL as string;
 const username = process.env.user as string;
 const password = process.env.password as string;
+c
+
 test('env login test', async ({ page }) => {
     console.log("URL is :", baseURL);
     console.log('username and password is:',username,':', password);

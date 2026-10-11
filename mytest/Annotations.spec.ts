@@ -2,9 +2,9 @@ import { test, expect } from "@playwright/test";
 
 /*
 test.describe-> Groups realted tests
-test.skip-Skipdsthe test,skipping a test beacause  it's not relevant in the current version
+test.skip-Skiped the test,skipping a test beacause  it's not relevant in the current version
 test.only- Runs only the test,ignoring others,running only this test(usefull for debugging)
-test.fixme-Marks a test as expected to faile  Temporarily ignoring a broken test
+test.fixme-Marks a test as expected to fail  Temporarily ignoring a broken test
 test.slow-Marks a test as slow ,Running a slow test(e,g,. heavy UI interactions)--Marks test as slow (triples timeout).
 test.fail-Marking a known bug as expected to fail
 

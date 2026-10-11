@@ -45,7 +45,7 @@ test('Test input box- error message', async ({ page }) => {
 
 })
 
-test.only('Radio Button', async ({ page }) => {
+test('Radio Button', async ({ page }) => {
     await page.goto('https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php');
     await page.locator("#headingOne .accordion-button.collapsed").click();
     await page.getByRole('link', { name: 'Radio Button' }).click();

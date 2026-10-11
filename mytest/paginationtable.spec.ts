@@ -47,7 +47,7 @@ test('filter the rows and check the rows count', async () => {
 
 
 })
-test.only('Search for specificdata in atable', async () => {
+test('Search for specificdata in atable', async () => {
     const browser = await chromium.launch({ headless: false, channel: 'chrome' });
     const context = await browser.newContext();
     const page = await context.newPage();

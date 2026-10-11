@@ -42,7 +42,7 @@ test ('Confirmation Dialog', async ({ page }) => {
 })
 
 
-test.only ('Promt Dialog', async ({ page }) => {
+test ('Promt Dialog', async ({ page }) => {
     await page.goto("https://testautomationpractice.blogspot.com/");
 
     //Register a dialog handler
@@ -68,3 +68,7 @@ test.only ('Promt Dialog', async ({ page }) => {
     await page.waitForTimeout(3000);
 
 })
+
+
+npx playwright test--shard = 1/3
+split the test across machines (CI sharding)

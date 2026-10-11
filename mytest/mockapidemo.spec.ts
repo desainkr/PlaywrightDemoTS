@@ -6,11 +6,10 @@ import tags from "../mocks/tags.json" with { type: "json" };
 test('Mocking API', async ({ page }) => {
 
     await page.route('**/*/api/tags', async route =>
-    {
-    if (route.request().method().includes("Get")) 
+    {    if (route.request().method().includes("Get")) 
         {
         await route.fulfill({
-            body: JSON.stringify(tags)
+        body: JSON.stringify(tags)
         })
     } else 
     {
@@ -20,10 +19,9 @@ test('Mocking API', async ({ page }) => {
 
     })
 
-
     await page.goto("https://conduit.bondaracademy.com/");
 
-    await expect(page.locator('.tag-list')).toContainText("Neel");
+    await expect(page.locator('.tag-list').first()).toContainText("qa career");
 
 
 

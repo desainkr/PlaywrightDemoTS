@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "username": "standard_user",
+      "password": "secret_sauce",
+      "expectedUrl": "https://www.saucedemo.com/inventory.html"
+    },
+    {
+      "username": "standard_user1",
+      "password": "secret_sauce1",
+      "expectedError": "Epic sadface: Username and password do not match any user in this service"
+    }
+  ]
+}

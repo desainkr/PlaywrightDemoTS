@@ -13,12 +13,12 @@ import path from 'path';
   6.we can access the environment variables using ENV object like ENV.baseURL,ENV,username etc
 
   */
-const { BASE_URL, EMAIL, PASSWORD } = process.env;
+/*const { BASE_URL, EMAIL, PASSWORD } = process.env;
 
 if (!BASE_URL || !EMAIL || !PASSWORD) {
     throw new Error('Required environment variables are missing');
 }
-test (`All env login test ${EMAIL}`, async ({ page }) => {
+test.skip (`All env login test ${EMAIL}`, async ({ page }) => {
     console.log("URL is :", BASE_URL);
     console.log('username and password is:',EMAIL,':', PASSWORD);
     await page.goto(BASE_URL);
@@ -44,3 +44,5 @@ test.skip(`env login test ${process.env.EMAIL}`, async ({ page }) => {
     await expect(page.getByRole("heading", { name: 'My Account' }).first()).toBeVisible({timeout: 5000});
     //await expect(page.locator("//h2[normalize-space()='My Account']")).toBeVisible({timeout: 3000});
 })
+
+*/

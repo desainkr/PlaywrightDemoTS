@@ -5,15 +5,13 @@ test('Drop down test1', async ({ page }) => {
     //Seelct option dropdown
     await page.locator(`#state`).selectOption({ value: 'Rajasthan' }); // By using value
     await page.waitForTimeout(4000)
-    await page.waitForTimeout(4000);
     await page.locator(`#state`).selectOption({ index: 2 });  // By using index
     await page.waitForTimeout(2000);
     await page.locator(`#state`).selectOption({ label: 'Haryana' }); //By using label
 
-
 })
 
-test.only('Drop down Amazon test2', async ({ page }) => {
+test('Drop down Amazon test2', async ({ page }) => {
     await page.goto('https://www.amazon.com/');
     //Seelct option dropdown
     // await page.locator('#searchDropdownBox').selectOption({ value: 'search-alias=alexa-skills' }) //By using value

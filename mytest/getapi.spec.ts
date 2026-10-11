@@ -4,10 +4,10 @@ test('Get api test', async ({ request }) => {
 
     const response = await request.get("https://restful-booker.herokuapp.com/booking");
 
-    //console.log(response.status());
+    //console.log(response);
     const responseheaders = response.headers();
     //console.log(response.statusText());
-    //console.log(await response.json());
+   // console.log(await response.json());
     const responsejson = await response.json();
     expect(response.status()).toBe(200);
     expect(response.statusText()).toBe("OK");

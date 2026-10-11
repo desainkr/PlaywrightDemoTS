@@ -13,9 +13,8 @@ test('Multi select dropdown test', async () => {
     //await page.locator("select[id='colors']").selectOption(['Red','Blue','Green']);//using visible text
     //await page.locator("select[id='colors']").selectOption(['yellow','White','blue']); //using value attribute text
     //await page.locator("select[id='colors']").selectOption([{label:'Red'},{label:'Green'},{label:"Yellow"}]); //using label text
-    await page.locator("select[id='colors']").selectOption([{ index: 3 }, { index: 4 }, { index: 5 }, { index: 6 }]); //using label text
-    await page.waitForTimeout(4000)
-
+    await page.locator("select[id='colors']").selectOption([{ index: 3 }, { index: 4 }, { index: 5 }, { index: 6 }]); //using index
+   
     // 2.check number of options in the dropdown(count)
     const dpoptions = page.locator("#colors>option");
 
